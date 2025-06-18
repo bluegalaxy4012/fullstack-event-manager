@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="394.0" prefWidth="608.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mpp.gui.controller.ProbaController">
+   <children>
+      <TableView fx:id="participantiTableView" layoutX="14.0" layoutY="11.0" prefHeight="371.0" prefWidth="574.0">
+        <columns>
+          <TableColumn fx:id="idParticipantColumn" prefWidth="225.0" text="Nume participant" />
+          <TableColumn fx:id="varstaColumn" minWidth="0.0" prefWidth="78.0" text="Varsta" />
+            <TableColumn fx:id="nrProbeColumn" prefWidth="264.0" text="Numar probe la care e inscris" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+   </children>
+</AnchorPane>

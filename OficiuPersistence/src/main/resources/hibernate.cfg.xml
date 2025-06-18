@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+
+        <property name="hibernate.connection.driver_class">org.sqlite.JDBC</property>
+        <property name="hibernate.connection.url">jdbc:sqlite:/home/marianpc/Documents/Projects/FCLT/An 2 - Sem 2/MPP/LabJava/LabPb3/OficiuServer/db.db</property>
+        <property name="hibernate.dialect">org.hibernate.community.dialect.SQLiteDialect</property>
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.format_sql">true</property>
+        <property name="hibernate.current_session_context_class">thread</property>
+        <property name="hibernate.jdbc.use_get_generated_keys">false</property>
+
+        <mapping class="mpp.domain.Participant"/>
+        <mapping class="mpp.domain.Utilizator"/>
+        <mapping class="mpp.domain.Proba"/>
+        <mapping class="mpp.domain.Inscriere"/>
+    </session-factory>
+</hibernate-configuration>

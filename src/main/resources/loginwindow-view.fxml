@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="246.0" prefWidth="347.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mpp.gui.controller.LoginController">
+   <children>
+      <TextField fx:id="numeUtilizatorTextField" layoutX="88.0" layoutY="53.0" />
+      <Label layoutX="121.0" layoutY="31.0" text="Nume utilizator:" />
+      <Label layoutX="150.0" layoutY="106.0" text="Parola:" />
+      <Button layoutX="147.0" layoutY="192.0" mnemonicParsing="false" onAction="#handleLoginButton" text="Login" />
+      <PasswordField fx:id="parolaTextField" layoutX="88.0" layoutY="132.0" />
+   </children>
+</AnchorPane>
